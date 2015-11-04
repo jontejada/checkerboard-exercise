@@ -28,7 +28,7 @@ function MakeBox (color) {
 	document.body.appendChild(box);
 }
 
-for (var i = 0 ; i < 100 ; i++ ) {
+for (var i = 0 ; i < 81 ; i++ ) {
 	MakeBox ('black');
 	MakeBox ('red');
 }
