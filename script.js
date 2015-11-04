@@ -18,7 +18,7 @@ var boxSize = window.innerWidth * 0.111;
 // box2.style.margin = '0px';
 // document.body.appendChild(box2);
 
-function MakeBox (color) {
+function makeBox (color) {
 	var box = document.createElement('div');
 	box.style.backgroundColor = color;
 	box.style.width = boxSize+'px';
@@ -29,9 +29,10 @@ function MakeBox (color) {
 	document.body.appendChild(box);
 }
 
+//back and red checkerboard
 // for (var i = 0 ; i < 81 ; i++ ) {
-// 	MakeBox ('black');
-// 	MakeBox ('red');
+// 	makeBox ('black');
+// 	makeBox ('red');
 // }
 
 //randomcolors
@@ -39,7 +40,7 @@ function MakeBox (color) {
 // 	var rColorR = Math.floor(Math.random()*256);
 // 	var rColorG = Math.floor(Math.random()*256);
 // 	var rColorB = Math.floor(Math.random()*256);
-// 	MakeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
+// 	makeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
 // }
 
 //gradient on random
@@ -49,14 +50,14 @@ function MakeBox (color) {
 // 	var rColorR = Math.floor(Math.random()*256);
 // 	var rColorG = Math.floor(Math.random()*256);
 // 	var rColorB = Math.floor(Math.random()*256);
-// 	MakeBox ('rgba('+rColorR+","+rColorG+","+rColorB+","+alpha+")");
+// 	makeBox ('rgba('+rColorR+","+rColorG+","+rColorB+","+alpha+")");
 // 	console.log(alpha);
 // }
 
 //(rebuilt) checkerboard with gradient
 for (var i = 0 ; i < 81 ; i++) {
-	MakeBox('rgb(0,0,'+6*i+')');
-	MakeBox('rgb(255,0,'+6*i+')');
+	makeBox('rgb(0,0,' + 6*i + ')');
+	makeBox('rgb(255,0,' + 6*i + ')');
 }
 
 
