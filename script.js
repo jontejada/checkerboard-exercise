@@ -28,9 +28,15 @@ function MakeBox (color) {
 	document.body.appendChild(box);
 }
 
-for (var i = 0 ; i < 81 ; i++ ) {
-	MakeBox ('black');
-	MakeBox ('red');
-}
+// for (var i = 0 ; i < 81 ; i++ ) {
+// 	MakeBox ('black');
+// 	MakeBox ('red');
+// }
 
-//test for randomcolors
+//randomcolors
+for (var i = 0 ; i < 81 ; i++ ) {
+	var rColorR = Math.floor(Math.random()*256);
+	var rColorG = Math.floor(Math.random()*256);
+	var rColorB = Math.floor(Math.random()*256);
+	MakeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
+}
