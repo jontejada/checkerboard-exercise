@@ -32,3 +32,5 @@ for (var i = 0 ; i < 81 ; i++ ) {
 	MakeBox ('black');
 	MakeBox ('red');
 }
+
+//test for randomcolors
