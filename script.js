@@ -55,10 +55,16 @@ function makeBox (color) {
 // }
 
 //(rebuilt) checkerboard with gradient
-for (var i = 0 ; i < 81 ; i++) {
-	makeBox('rgb(0,0,' + 6*i + ')');
-	makeBox('rgb(255,0,' + 6*i + ')');
+// for (var i = 0 ; i < 81 ; i++) {
+// 	makeBox('rgb(0,0,' + 6*i + ')');
+// 	makeBox('rgb(255,0,' + 6*i + ')');
+// }
+
+//flashing random colors
+for (var i = 0 ; i < 81 ; i++ ) {
+	var rColorR = Math.floor(Math.random()*256);
+	var rColorG = Math.floor(Math.random()*256);
+	var rColorB = Math.floor(Math.random()*256);
+	makeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
 }
-
-
 
