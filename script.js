@@ -42,18 +42,22 @@ function MakeBox (color) {
 // 	MakeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
 // }
 
-//gradient
-var alpha = 0.1;
-for (var i = 0 ; i < 81 ; i++ ) {
-	alpha = alpha + 0.01;
-	var rColorR = Math.floor(Math.random()*256);
-	var rColorG = Math.floor(Math.random()*256);
-	var rColorB = Math.floor(Math.random()*256);
-	MakeBox ('rgba('+rColorR+","+rColorG+","+rColorB+","+alpha+")");
-	console.log(alpha);
+//gradient on random
+// var alpha = 0.1;
+// for (var i = 0 ; i < 81 ; i++ ) {
+// 	alpha = alpha + 0.015;
+// 	var rColorR = Math.floor(Math.random()*256);
+// 	var rColorG = Math.floor(Math.random()*256);
+// 	var rColorB = Math.floor(Math.random()*256);
+// 	MakeBox ('rgba('+rColorR+","+rColorG+","+rColorB+","+alpha+")");
+// 	console.log(alpha);
+// }
+
+//(rebuilt) checkerboard with gradient
+for (var i = 0 ; i < 81 ; i++) {
+	MakeBox('rgb(0,0,'+6*i+')');
+	MakeBox('rgb(255,0,'+6*i+')');
 }
-
-
 
 
 
