@@ -1,4 +1,5 @@
 document.body.style.margin = '0px';
+document.body.style.backgroundColor = 'blue';
 var boxSize = window.innerWidth * 0.111;
 
 // var box = document.createElement('div');
@@ -34,9 +35,25 @@ function MakeBox (color) {
 // }
 
 //randomcolors
+// for (var i = 0 ; i < 81 ; i++ ) {
+// 	var rColorR = Math.floor(Math.random()*256);
+// 	var rColorG = Math.floor(Math.random()*256);
+// 	var rColorB = Math.floor(Math.random()*256);
+// 	MakeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
+// }
+
+//gradient
+var alpha = 0.1;
 for (var i = 0 ; i < 81 ; i++ ) {
+	alpha = alpha + 0.01;
 	var rColorR = Math.floor(Math.random()*256);
 	var rColorG = Math.floor(Math.random()*256);
 	var rColorB = Math.floor(Math.random()*256);
-	MakeBox ('rgb('+rColorR+","+rColorG+","+rColorB+")");
+	MakeBox ('rgba('+rColorR+","+rColorG+","+rColorB+","+alpha+")");
+	console.log(alpha);
 }
+
+
+
+
+
